@@ -1,0 +1,14 @@
+body {
+  background-color: aliceblue;
+}
+img {
+  size: 100px 100px;
+}
+
+#bannerimage {
+  width: 100%;
+  background-image: url("./img/Pizza\ img.jpg");
+  height: 200px;
+  background-color: purple;
+  background-position: center;
+}

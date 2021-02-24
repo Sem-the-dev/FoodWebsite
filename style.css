@@ -12,3 +12,11 @@ img {
   background-color: purple;
   background-position: center;
 }
+
+.card {
+  margin-bottom: 10px;
+}
+
+#recipieSection {
+  margin: 20px;
+}

@@ -1,17 +1,14 @@
-:root {
-  --stripWidth: 100vw;
-}
 body {
   background-color: aliceblue;
 }
 header {
   width: 100%;
-  height: var(--header);
-}
-img {
-  size: 100px 100px;
 }
 
+body > h1 {
+  text-align: center;
+  margin-top: 2rem;
+}
 article .img-fluid {
   height: 200px;
   max-width: 100%;
@@ -34,6 +31,11 @@ article .row {
 #recipieSection {
   margin: 20px;
 }
+
+.list-group {
+  text-align: center;
+}
+
 navbar:hover {
   color: tomato;
 }

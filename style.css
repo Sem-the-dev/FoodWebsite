@@ -1,14 +1,26 @@
-:root { --stripWidth: 100vw}
+:root {
+  --stripWidth: 100vw;
+}
 body {
   background-color: aliceblue;
 }
 header {
   width: 100%;
-  height: var(--header)
+  height: var(--header);
 }
 img {
   size: 100px 100px;
 }
+
+article .img-fluid {
+  height: 200px;
+  max-width: 100%;
+}
+
+article .row {
+  margin-top: 0;
+}
+
 #bannerimage {
   width: 100%;
   background-image: url("./img/Pizza\ img.jpg");
@@ -22,29 +34,43 @@ img {
 #recipieSection {
   margin: 20px;
 }
-navbar:hover{color:tomato}
+navbar:hover {
+  color: tomato;
+}
 @media only screen and (orientation: portrait) and (max-width: 500px) {
-  article{
-     width: 500;
+  article {
+    width: 500;
   }
 }
-@media only screen and (max-width: 990px){
-  article > div{
-      width: 50vw;
-      background-color: black;
+
+@media only screen and (max-width: 991px) {
+  article > div {
+    width: 50vw;
   }
   .card-text {
-     background-color: rgb(151, 72, 58);
-     color: white;
-    }
+    display: none;
+  }
+
+  .card-title {
+    text-align: center;
+  }
+  body > article .container *,
+  ::after,
+  ::before {
+    box-sizing: content-box;
+  }
+  body > article .btn {
+    display: block;
+  }
 }
-@media only screen and (max-width: 770px){
-  article > div{
-      width: 50vw;
-      background-color: black;
+
+@media only screen and (max-width: 375px) {
+  body > article .container *,
+  ::after,
+  ::before {
+    box-sizing: content-box;
   }
-  .card-text {
-     background-color: rgb(151, 72, 58);
-     color: white;
-    }
+  body > article .btn {
+    display: block;
+  }
 }

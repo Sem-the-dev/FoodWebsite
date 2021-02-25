@@ -35,9 +35,6 @@ article .row {
 .list-group {
   text-align: center;
 }
-
-navbar:hover {
-  color: tomato;
 }
 @media only screen and (orientation: portrait) and (max-width: 500px) {
   article {
